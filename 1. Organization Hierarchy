@@ -9,3 +9,5 @@ Tenant-ID
   └──  Subscriptions
          └──  Resource Groups
                 └──  Resources
+Resource Manager: Who creates the resource.
+-- User request for some resource---request goes to Resource Manager----Resource Manager provides resource.
