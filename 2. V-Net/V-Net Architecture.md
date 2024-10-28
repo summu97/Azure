@@ -3,8 +3,8 @@ Azure Firewall: Network level security(Global Security).
 --
 NSG(Network Security Group): Resource level security-Ports-Inbound/Outbound rules.
 NSG types:
--- Subnet level NSG.
--- Instance level NSG.
+-- Subnet level NSG: Applied to all instances in subnet.
+-- Instance level NSG: Aplied to induvidual instances in subnet.
 --
 ASG(Application Security Group): Enhances ssecurity capabilities of NSG.
 -- Applies only to group of servers.
