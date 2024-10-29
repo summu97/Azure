@@ -30,4 +30,21 @@ Key management: for encrypting data.
 * Platform-managed key: encryption keys are managed by cloud.
 * Customer-managed key: encryption keys are managed by us.
 * Platform-managed and customer-managed keys: combo of both.
+
+Networking:
 --
+Network access: Enable access to your managed disk either publicly using public IP addresses or privately using private endpoints.
+
+* Enable public access from all networks.
+-- Make this resource available publicly.
+  
+* Disable public access and enable private access:
+-- Access your resource using private endpoints.
+  
+Shared disk:
+--
+-- Allow this disk to be attached to two or more virtual machines, depending on storage type and disk size. When shared disk is enabled host caching is unavailable. 
+
+Data access authentication mode
+--
+-- Allow Data Access with Azure Active Directory Authentication for disk upload/export.
