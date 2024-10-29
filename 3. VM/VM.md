@@ -53,3 +53,11 @@ etc...
 Enable Hibernation: 
 --
 -- Setting that allows a computer to save its current state (open applications and documents) to the hard drive and then completely power off. When the computer is turned back on, it can quickly restore everything to how it was before hibernation.
+
+Custom data:
+--
+* When you want to execute set of commands, when creating vm then use this.
+
+User data:
+--
+* If you want to store some files or data at particular location inside VM, then use this.
