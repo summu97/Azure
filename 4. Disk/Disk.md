@@ -20,10 +20,10 @@ Zone-redundant storage (data is replicated to three zones).
 --
 types:
 * Premium SSD (zone-redundant storage)
--- ZRS is not available when availability zone is selected.
+-- Best for the production workloads that need storage resiliency against zone failures.
   
 * Standard SSD (zone-redundant storage)
--- ZRS is not available when availability zone is selected.
+-- Best for web servers, lightly used enterprise applications and dev/test that need storage resiliency against zone failures.
   
 Key management: for encrypting data.
 --
