@@ -26,6 +26,7 @@ types:
 -- ZRS is not available when availability zone is selected.
   
 Key management: for encrypting data.
+--
 * Platform-managed key: encryption keys are managed by cloud.
 * Customer-managed key: encryption keys are managed by us.
 * Platform-managed and customer-managed keys: combo of both.
