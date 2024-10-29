@@ -42,12 +42,12 @@ Azure spot discount:
 
 Virtual Machine Types:
 --
-B-series: Only for free trail. Learning purpose.
-D-series: General Purpose Aplications.
-E-series: Memory Intense Applications.
-F-series: Compute Intense(multiple processes running).
-H-series: High Performance Applications.
-L-series: Storage Optimised(For DB, where there is a need of storage processing.).
+* B-series: Only for free trail. Learning purpose.
+* D-series: General Purpose Aplications.
+* E-series: Memory Intense Applications.
+* F-series: Compute Intense(multiple processes running).
+* H-series: High Performance Applications.
+* L-series: Storage Optimised(For DB, where there is a need of storage processing.).
 etc...
 
 Enable Hibernation: 
