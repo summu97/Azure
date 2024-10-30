@@ -3,11 +3,11 @@ Microsoft Entra Id = Active Directory
 
 Users:
 --
-* For users we use Users, Groups, Roles.
+* For users we have Users, Groups, Roles.
 
 Resources:
 --
-* For resources we use Service Principal, Managed Identity.
+* For resources we have Service Principal, Managed Identity.
 
 Service Principal:
 --
