@@ -1,4 +1,5 @@
-Previously known as "Active Directory".
+Microsoft Entra Id = Active Directory
+--
 
 Users:
 --
