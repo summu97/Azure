@@ -61,3 +61,15 @@ Custom data:
 User data:
 --
 * If you want to store some files or data at particular location inside VM, then use this.
+
+Comparison between RSA and Ed25519 SSH keys:
+--
+* Security: Ed25519 is very secure even with smaller keys (256-bit), while RSA needs larger keys (2048+ bits) for similar security.
+* Speed: Ed25519 is faster and uses less computing power, which is helpful for many SSH connections or limited systems. RSA can be slower, especially with larger keys.
+* Size: Ed25519 keys are smaller and quicker to use, while RSA keys are longer and take up more space.
+* Compatibility: RSA works almost everywhere, even on older systems. Ed25519 works on most modern systems but might not be supported on some older ones.
+
+General use case:
+--
+* Use Ed25519 for speed, compact size, and modern security.
+* Use RSA if you need the widest compatibility across all systems.
