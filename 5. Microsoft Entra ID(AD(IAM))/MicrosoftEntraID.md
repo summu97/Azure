@@ -23,3 +23,13 @@ General Roles:
 * Contributer(user)
 * Owner
 * Reader
+* Writer
+* Inviter
+* Manager
+* Author
+* Approver
+* Administrator
+
+NOTE:
+--
+* If you want to asing any user a resource, then go to that resource--IAM--assign role.
