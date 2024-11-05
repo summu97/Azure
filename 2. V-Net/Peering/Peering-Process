@@ -1,0 +1,3 @@
+Go to VNET -- peerings -- +ADD -- peering link name -- virtual network deployment model -- Resource Manager(newer model: has advanced networking support) or clasic(oldmodel: choose
+this if you are working on legacy projects) -- Subscription -- virtual network(select the one you want to peer with) -- Remote virtual network peering settings(Select your options)
+-- Local virtual network summary -- Peering link name -- Local virtual network peering settings(choose wht u want) -- ok.
