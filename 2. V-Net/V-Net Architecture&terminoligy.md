@@ -49,3 +49,10 @@ Point to Point
 * Direct link between two devices/locations, allowing then to communicate privately without going through any other networks.
 * Connects two end points.
 
+Important points about Virtual Network Gateways
+--
+* It supports both S2S & P2S VPN Gateway.
+* VPN solution provides encrypted tunnels for secure communication.
+* VPN solution requires authentication ensuring only authorized induviduals with VPN credentials to connect.
+* Encrypts all communication via tunneling.
+
