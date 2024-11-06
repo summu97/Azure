@@ -35,3 +35,17 @@ V-Net Gateway: To allow V-Net's to communicate with each other.
 VPN Gateway: Similar to V-Net peering
 --
 * For communication between V-Net on azure with any other network privately.
+
+Site to Site VPN Gateway(Network to network)
+--
+* To connect On-premises network with Azure VNet.
+
+Point to Site VPN Gateway
+--
+* To connect induvidual devices(Laptops/Computers) to Azure virtual network.
+
+Point to Point
+--
+* Direct link between two devices/locations, allowing then to communicate privately without going through any other networks.
+* Connects two end points.
+
