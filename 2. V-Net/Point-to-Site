@@ -1,0 +1,49 @@
+# Step-01: Create Virtual Network Gateway and VNet.
+Virtual network gateways--Create--Subscription--Name--Region--Gateway type(VPN)--Virtual network(create virtual network(give name, resource group and other details))--ok--Public IP address name--Availability zone(Zone-redundant)--Enable active-active mode(Disabled)--Give Tags if required--Review + create.
+
+# Step-02: Create Virtual machine.
+
+# Step-03: Generate Certificates(In your machine).
+
+🌟Generating  Certificates in Windows Powershell🌟
+
+# For Root Certificate: 
+
+$cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
+-Subject "CN=SumanthRootCert" -KeyExportPolicy Exportable `
+-HashAlgorithm sha256 -KeyLength 2048 `
+-CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
+
+# For Client Certificate:
+
+New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature `
+-Subject "CN=SumanthChildCert" -KeyExportPolicy Exportable `
+-HashAlgorithm sha256 -KeyLength 2048 `
+-CertStoreLocation "Cert:\CurrentUser\My" `
+-Signer $cert -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2")
+
+
+# Use of root certificate: For authenticity of client cert
+# Use of client certificate: Used by client device to securely from a connection with VNet Gateway.
+
+# Output: Save for later use.
+###################################################################
+Thumbprint                                Subject
+----------                                -------
+C429405D724D2850A31B1E1AF23EC7BDE0075E3D  CN=SumanthChildCert
+###################################################################
+
+# In Powershell
+
+Cmnd: certmgr -- Personal--Certificates(you can see the generated certificates)--On Root certificate--Right click--All taks--Export--Next--Select: No, do not......private key--Next--Select: Base64......x509--Next--Filename(rootcertificatefile)--Browse(Location to store the file)--Give file name--Save--Finish.
+Now Open the saved cert file location--Right click--Open in notepad(Keep it side).
+
+# Step-04: Download VPN client
+Virtual network gateways--Go to created gateway--Point-to-site configuration--Configure now--Address pool(172.16.0.0/24)--Tunnel type(IKEv2 and SSTP (SSL))--Authentication type(Azure certificate)--In Root certificates--Name(Give any name)--Public certificate data(Paste the cert content from notepad(only the main body not beginning and ending))--Save--Download VPN client.
+
+# Step-05: Setting VPN client in your machine
+In your machine you'll get a file downloaded--Go to it--Extract--WindowsAmd64--Vp.....Amd64--more info--Run anyway--yes
+Now in search bar--Search for VPN settings--Open--Click on it--Connect--Go through steps in it.
+
+# Step-06: Connecting to VM
+Get private-IP of VM--In your machine--Cmd or git bash terminal--ping <private-IP>--ssh -i /Path/to/.pem username@private-IP.
