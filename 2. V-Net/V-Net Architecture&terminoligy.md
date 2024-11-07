@@ -81,3 +81,4 @@ NOTE:
     * Class A: 10 series
     * Class B: 172 series
     * Class C 192 series
+* By default al subnets in VNet can communicate with each other and each subnet is associated with routetable and NSG.
