@@ -70,3 +70,14 @@ NOTE:
 --
 * By default all the VM's that you create will have "outbound" internet access(You have access to internet from inside. But outside people cant access you). No need of any additional configuration.
 * They charge according to data we transfer.
+* Subnet division: When you reserve an IP set, 5 IP's in that set are reserved for other uses.
+* EX: 10.0.1.0/24 - you get 256 IP's in which 5 are reserved and 251 are for your use.
+    * 10.0.1.0 - For identifying the network.
+    * 10.0.1.1 - For Gateway.
+    * 10.0.1.2 & 10.0.0.3 - For DNS server.
+    * 10.0.1.255 - For Broadcast IP.
+
+* Every class of IP has set of IP's reserved for Private-IP.
+    * Class A: 10 series
+    * Class B: 172 series
+    * Class C 192 series
