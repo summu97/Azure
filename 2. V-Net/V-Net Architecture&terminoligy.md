@@ -56,3 +56,15 @@ Important points about Virtual Network Gateways
 * VPN solution requires authentication ensuring only authorized induviduals with VPN credentials to connect.
 * Encrypts all communication via tunneling.
 
+
+
+
+
+
+
+
+
+NOTE:
+--
+* By default all the VM's that you create will have "outbound" internet access(You have access to internet from inside. But outside people cant access you). No need of any additional configuration.
+* They charge according to data we transfer.
