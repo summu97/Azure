@@ -1,3 +1,5 @@
+VNet is a regional resource
+--
 Azure Firewall: Network level security(Global Security).
 -- Applied to entire V-Net.
 --
