@@ -58,7 +58,36 @@ Important points about Virtual Network Gateways
 * VPN solution requires authentication ensuring only authorized induviduals with VPN credentials to connect.
 * Encrypts all communication via tunneling.
 
+Activity log: Shows what's hapening in resource.
+--
+Access control(IAM): You can define permissions to users - What they can do?, Limit them etc...
+--
+Diagnose and solve problems: Here, the most common issues related to resources are listed & are provided with solutions.
+--
+Address space: To update or add new ip ranges.
+--
+* Use: When you have multi homed VM's (multiple NIC's) i.e, you have VM's with different VNet's connected.
 
+Security: This will notify us about any vulnarabilities, threat's.
+--
+* Continuously monitors the configuration of VNet & identifies potential threats.
+
+Service endpoint: For communication between resources internally without exposing out the connection.
+--
+Properties: Useful when you are trying to automate.
+--
+Locks: To avoid accedential deletion.
+--
+Export template or ARM template: Json formatted resource code that can be used to create new resiurce.
+--
+Connection troubleshoot: Helps check any connectivity issues betrween resources.
+--
+Network interface: Useful in adding NSG at resource level.
+--
+Effective security rules: For troubleshooting purpose.
+--
+* You apply NSG at instance or subnet level, you can see them.
+  
 
 
 
