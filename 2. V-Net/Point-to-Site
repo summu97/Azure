@@ -1,3 +1,6 @@
+What is happening here?
+* In our system we have a azure VPN client--we initiate it and it connects with azure VNet and uses our system as an extention and we can directly connect to VM's via private IP.
+
 # Step-01: Create Virtual Network Gateway and VNet.
 Virtual network gateways--Create--Subscription--Name--Region--Gateway type(VPN)--Virtual network(create virtual network(give name, resource group and other details))--ok--Public IP address name--Availability zone(Zone-redundant)--Enable active-active mode(Disabled)--Give Tags if required--Review + create.
 
