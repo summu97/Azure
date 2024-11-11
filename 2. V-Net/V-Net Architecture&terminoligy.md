@@ -80,6 +80,8 @@ Locks: To avoid accedential deletion.
 --
 Export template or ARM template: Json formatted resource code that can be used to create new resiurce.
 --
+* Download the template and create a job in Automation accounts and run it to create a resource.
+
 Connection troubleshoot: Helps check any connectivity issues betrween resources.
 --
 Network interface: Useful in adding NSG at resource level.
