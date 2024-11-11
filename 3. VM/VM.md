@@ -1,3 +1,7 @@
+Why enterprises are converting to Azure?
+--
+* If you are a windows liscence holder, you can use it and get 49% discont with VM's.
+
 VM types:
 --
 * Reserved VM's
