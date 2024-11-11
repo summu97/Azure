@@ -87,6 +87,28 @@ Capture:
 --
 * To make a templte. It captures the configuration we are using and using this we can create more VM's.
 
+Accelerated networking:
+--
+* For high throughput.
+
+Azure Security Center:
+--
+* Checks for any vulnarabilities in azure VM and displays them.
+
+Boot diagnostics:
+--
+* Displays the errors if any happened while booting up the VM by taking screenshot and uploading in portal.
+
+OS guest diagnostics:
+--
+* Similar to boot diagnostics but this looks the errors in os.
+    * EX: there is a exec file taking too long to run etc....
+    * NOTE: For this we need additional resources to create so mostly avoid this.
+
+Identity(System assigned manages identity):
+--
+* You have keys in Vault and want to asess them, then On this service and it will generate a key that you can use to access the keys from vault.
+
 NOTE:
 --
 * In Azure VM configurations are pre-defined i.e, we can't customise VM's(CPU, memory etc....). Know the requirement and use the machine types.
