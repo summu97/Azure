@@ -1,3 +1,8 @@
+VM types:
+--
+* Reserved VM's
+* Spot VM's
+
 Availability Options:
 --
 * No infrastructure redundancy required: 
@@ -73,6 +78,10 @@ General use case:
 --
 * Use Ed25519 for speed, compact size, and modern security.
 * Use RSA if you need the widest compatibility across all systems.
+
+Capture:
+--
+* To make a templte. It captures the configuration we are using and using this we can create more VM's.
 
 NOTE:
 --
