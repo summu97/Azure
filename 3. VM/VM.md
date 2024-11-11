@@ -73,3 +73,14 @@ General use case:
 --
 * Use Ed25519 for speed, compact size, and modern security.
 * Use RSA if you need the widest compatibility across all systems.
+
+NOTE:
+--
+* In Azure VM configurations are pre-defined i.e, we can't customise VM's(CPU, memory etc....). Know the requirement and use the machine types.
+* VM's come under IAAS.
+* Hourly based billing.
+* They use Page blob(binary large object) as storage - upto 8tb size.
+* If you dont know the type of machie to take then select general purpose machine.
+* The entire virtulization platform runs on hyperV.
+* Azure VM's are backed by vhd's(virtual hard drives) - We can download vhd's using storage-expower(azure tool), using the downloaded vhd's we can customise or storage back up images and re-upload the VM's.
+* 
