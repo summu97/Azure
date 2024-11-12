@@ -34,6 +34,10 @@ Load Balancer Types:
 * To differenciate the traffic path/host based.
 * Azure Load Balancer(Layer-4-TCP/UDP): Applied for inside traffic.
 
+Topology:
+--
+* Generated a diagram of Infrastructure created.
+
 V-Net peering: Adds routes from one vnet to other.
 --
 * Adds routes between V-Net's-We modify route tables of vnet's.
