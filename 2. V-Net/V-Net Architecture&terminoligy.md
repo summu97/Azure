@@ -15,6 +15,11 @@ ASG(Application Security Group): Enhances security capabilities of NSG.
 * Applies only to group of servers.
 * Using ASG we can group VM's and apply firewall rules only to that particular group.
 
+Network interface:
+--
+* Instance level security.
+* NSG attached to Network Interface will have rules only to VM's having that Interface.
+
 Route Table: One who maintains routes.
 --
 * Default routes: System routes- created when a new subnet is created.
