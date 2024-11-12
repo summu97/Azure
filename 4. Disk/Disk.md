@@ -48,3 +48,8 @@ Shared disk:
 Data access authentication mode
 --
 -- Allow Data Access with Azure Active Directory Authentication for disk upload/export.
+
+Host caching: If enabled the caching will store into physical server's storage - local hard drive or any other and this is mostly used for data drives.
+--
+
+
