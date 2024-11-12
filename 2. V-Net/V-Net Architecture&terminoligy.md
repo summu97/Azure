@@ -101,7 +101,10 @@ Effective security rules: For troubleshooting purpose.
 --
 * You apply NSG at instance or subnet level, you can see them.
   
-
+Traffic Manager:
+--
+* Acts as loadbalancer in different regions in global level.
+* It is not an actual loadbalancer but DNS based LB.
 
 
 
