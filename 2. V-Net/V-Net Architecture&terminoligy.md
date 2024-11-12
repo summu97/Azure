@@ -19,6 +19,7 @@ Network interface:
 --
 * Instance level security.
 * NSG attached to Network Interface will have rules only to VM's having that Interface.
+* Comes to action where there is a need for applying NSG's to particular VM's.
 
 Route Table: One who maintains routes.
 --
