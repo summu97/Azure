@@ -1,0 +1,4 @@
+Azure cli installation: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
+Go through above link to get more options on installing azure cli.
+
+RUN in terminal: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
