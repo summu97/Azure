@@ -28,6 +28,7 @@ Redundancy: How your data must replicate.(Replication kind)
 * Geo-zone-redundant storage(GZRS): Combo of GRS and ZRS.
 
 Access tier:
+--
 * Hot: For frequently accessed data.
 * Cool: For infrequently accessed data.
 * Cold: Rarely accessed data and backup scenarios.
