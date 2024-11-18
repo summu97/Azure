@@ -37,6 +37,7 @@ Managed disks: Advanced topic than Storage accounts
 * You directly create a file & attach to VM.
 
 Note:
+--
 * Storage account follow HTTP/S protocol.
 * When you create a storage account a unique URL is generated and use it to access storage account.
 * Blob: Binary Large Object.
