@@ -43,7 +43,7 @@ V-Net peering: Adds routes from one vnet to other.
 --
 * Adds routes between V-Net's-We modify route tables of vnet's.
   
-V-Net Gateway: To allow V-Net's to communicate with each other.
+V-Nat Gateway: To allow internet access to VNet.
 --
 VPN Gateway: Similar to V-Net peering
 --
