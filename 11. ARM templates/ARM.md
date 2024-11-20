@@ -1,7 +1,7 @@
 ARM templates: 
 ---
 * Follows a structure.
-* 
+  
 Has 5 components:
 --
 * schema: Has URL and defines the ARM template structure & contentVersion: Defines template version(Mandatory)
