@@ -1,0 +1,13 @@
+Step:01
+Create V-Net with bastion host.
+Step:02
+Create 2 private VM's with Availability options: Availability set + Availability set: Create
+Step:03
+Connect to VM's via bastion host and install apache2 with some msg in index.html file.
+Step:04
+Create Load Balancer: Create--Resource Group--Name--Region--SKU(Adds options to attach NSG)--Type(Public: Gets public-IP, Internal: for internal purpose, hos no public-IP)--Frontend IP configuration: Add--Name--Public IP address(Create--Name--Assignment-Dynamic-save)--save--Next: Backend pool: Add--name--select VNet--add(add your VM's)--Save--next: Inbound rules: add load-balancing rule--name--go through steps--next: Outbound rules--tags--create
+
+NOTE:
+* Session persistence specifies that traffic from a client should be handled by the same virtual machine in the backend pool for the duration of a session.
+* Without adding machines into Availability set, load balancer wont take VM's into backend pool.
+* Make sure to add port 80 in NSG.
