@@ -1,4 +1,5 @@
 Commands to connect using powershell:
+az login
 Connect-azaccount
 New-AzResourceGroup -Name TesT-RG01 -Location EastUS
 New-AzResourceGroupDeployment -ResourceGroupName TesT-RG01 -TemplateFile D:\Path\To\file.json -Template-ParameterFile D:\.....parameters.json
