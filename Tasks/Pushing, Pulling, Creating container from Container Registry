@@ -1,0 +1,45 @@
+Install Docker:
+apt install docker.io -y
+
+Create a resource group:
+az group create --name CR_RSG --location eastus
+az group list
+
+Create a container registry:
+az acr create --resource-group CR_RSG --name democr001 --sku Premium
+
+List registry:
+az acr list --query "[].name" --output tsv
+
+Log in to registry:
+az acr login --name <registry-name>
+Ex: az acr login --name democr001
+
+To get login server details:
+az acr show --name democr001 --query "loginServer" --output tsv
+
+tag image:
+docker tag local_image_name <login-server>/<image_name:version to store>
+EX: docker tag acr_image:latest democr001.azurecr.io/acr_image:v1
+
+Push image to registry:
+docker push <login-server>/<image_name:version>
+EX: docker push democr001.azurecr.io/acr_image:v1
+
+List container images:
+az acr repository list --name <registry-name> --output table
+EX: az acr repository list --name democr001 --output table
+
+To get the repository tag:
+az acr repository show-tags --name democr001 --repository acr_image --output table
+
+Run image from registry:
+docker run <login-server>/<image_name:version>
+EX: docker run democr001.azurecr.io/acr_image:v1
+
+Remove image:
+docker rmi <login-server>/<image_name:version>
+EX: docker rmi democr001.azurecr.io/acr_image:v1
+
+Clean up resources:
+az group delete --name myResourceGroup
