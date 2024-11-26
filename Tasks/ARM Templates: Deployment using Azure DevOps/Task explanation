@@ -6,3 +6,6 @@ Connection(select your subscription)--Authorize--Subscription--Resource group--L
 URL of file: Go to file in github, open it in raw format and copy paste URL here)--Template(your.json file)--Template parameter(your 
 parameters.json file name)--Deployment mode(Incermental: this will create only the changes when ever applied)--ADD)
 Step:04--Go to pipelines and run pipeline.
+
+ERROR:
+* No parallelism jobs: Go to Organizational settings--Billing--Add subscription & in MS Hosted CI/CD(1)--save
