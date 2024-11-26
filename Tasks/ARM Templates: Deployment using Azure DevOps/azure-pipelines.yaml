@@ -5,11 +5,11 @@ pool:
   VNetImage: 'ubuntu-latest'  # Linux-based agent
 
 variables:
-  azureServiceConnection: 'Pay-As-You-Go(51f41f85-b52c-4d95-a2f5-28303cbdb6ec)'  # Replace with your Azure service connection name
+  azureServiceConnection: 'Pay-As-You-Go(51f41f85-b52c-4d95-a2f5-28303cbdb6ec)'  # Replace azureResourceManagerConnection value.
   subscriptionId: '51f41f85-b52c-4d95-a2f5-28303cbdb6ec'                        # Replace with your Azure subscription ID
   resourceGroupName: 'Demo-ARM-templates-rg'                                     # Replace with your Resource Group name
   location: 'East US'                                                            # Replace with your Azure region
-  templateFile: 'VNet-deployment.json'                                             # Path to ARM template file
+  templateFile: 'VNet-deployment.json'                                             # Path to ARM template file(csmFile)
   parametersFile: 'VNet-deploymentparameters.json'                                 # Path to parameters file
 
 stages:
