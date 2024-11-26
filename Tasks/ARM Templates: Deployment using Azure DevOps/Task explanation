@@ -1,3 +1,8 @@
 Step:01-Create Project in azure DevOps.
 Step:02-Go to Repos--Clone in VS Code--make sure to have your .json files commited--git push -u origin --all --refresh files in Repo, you can see json files added.
-Step:03-Pipelines--Create--Azure Repos Git--Select repository--Starter Pipeline--Copy paste the code fo azure-pipelines.yaml by making changes in variables.
+Step:03-Pipelines--Create--Azure Repos Git--Select repository--Starter Pipeline--Copy paste the code fo azure-pipelines.yaml by making changes in variables
+(For variables values click on "more assist"--search for "ARM template deployment"--Deployment scope(Resource Group)--Azure resource Manager 
+Connection(select your subscription)--Authorize--Subscription--Resource group--Location--Template Location(Linked artifact: file from local, 
+URL of file: Go to file in github, open it in raw format and copy paste URL here)--Template(your.json file)--Template parameter(your 
+parameters.json file name)--Deployment mode(Incermental: this will create only the changes when ever applied)--ADD)
+
