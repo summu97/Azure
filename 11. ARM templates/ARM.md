@@ -21,4 +21,14 @@ Template Link: https://github.com/Azure/azure-quickstart-templates.git
 
 How many ways you can create resources using ARM templates: Using "templates" resource in azure, powershell, AzureDevops.
 --
- 
+
+Main files for Azure DevOps:
+--
+* .json 
+* parameters.json 
+* pipeline.yaml
+
+What happend when you create a project?
+--
+* An empty git repo with project name is created.
+
