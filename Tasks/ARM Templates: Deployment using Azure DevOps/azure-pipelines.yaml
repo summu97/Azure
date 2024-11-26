@@ -1,8 +1,6 @@
 trigger:
-- main  # Adjust based on your branch
+- master  # Adjust based on your branch
 
-pool:
-  VNetImage: 'ubuntu-latest'  # Linux-based agent
 
 variables:
   azureServiceConnection: 'Pay-As-You-Go(51f41f85-b52c-4d95-a2f5-28303cbdb6ec)'  # Replace azureResourceManagerConnection value.
