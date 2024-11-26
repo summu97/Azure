@@ -25,3 +25,14 @@ Dashboard:
 * We can add widget to it so that it displays what we have & need to do.
 
 Queries: To find out items from work items. You have 100's of items in that you can filter using queries.
+--
+
+Main files for Azure DevOps:
+--
+* .json 
+* parameters.json 
+* pipeline.yaml
+
+What happend when you create a project?
+--
+* An empty git repo with project name is created.
