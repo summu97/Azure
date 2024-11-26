@@ -1,0 +1,34 @@
+trigger:
+- main  # Adjust based on your branch
+
+pool:
+  VNetImage: 'ubuntu-latest'  # Linux-based agent
+
+variables:
+  azureServiceConnection: 'Pay-As-You-Go(51f41f85-b52c-4d95-a2f5-28303cbdb6ec)'  # Replace with your Azure service connection name
+  subscriptionId: '51f41f85-b52c-4d95-a2f5-28303cbdb6ec'                        # Replace with your Azure subscription ID
+  resourceGroupName: 'Demo-ARM-templates-rg'                                     # Replace with your Resource Group name
+  location: 'East US'                                                            # Replace with your Azure region
+  templateFile: 'VNet-deployment.json'                                             # Path to ARM template file
+  parametersFile: 'VNet-deploymentparameters.json'                                 # Path to parameters file
+
+stages:
+- stage: Deploy
+  displayName: 'Deploy ARM Template'
+  jobs:
+  - job: DeployResources
+    displayName: 'Deploy Resources to Azure'
+    steps:
+    - checkout: self  # Ensures code is available on the agent
+    - task: AzureResourceManagerTemplateDeployment@3
+      inputs:
+        deploymentScope: 'Resource Group'
+        azureResourceManagerConnection: '$(azureServiceConnection)'
+        subscriptionId: '$(subscriptionId)'
+        action: 'Create Or Update Resource Group'
+        resourceGroupName: '$(resourceGroupName)'
+        location: '$(location)'
+        templateLocation: 'Linked artifact'
+        csmFile: '$(templateFile)'
+        csmParametersFile: '$(parametersFile)'
+        deploymentMode: 'Incremental'
