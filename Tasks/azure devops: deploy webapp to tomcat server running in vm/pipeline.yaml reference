@@ -1,0 +1,49 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/target'
+    Contents: '**/*.war'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/war-files'
+
+# # # # Step 3: Publish the copied files as pipeline artifacts
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/war-files'
+    artifact: 'war-files'
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'azureDevOps-to-azureVM'  # The name of your SSH service connection
+    sourceFolder: '$(Build.ArtifactStagingDirectory)/war-files'
+    contents: '*.war'
+    targetFolder: '/home/azureuser/apache-tomcat-9.0.97/webapps'
+
+# - task: SSH@0
+#   inputs:
+#     sshEndpoint: 'azureDevOps-to-azureVM'  # The name of your SSH service connection
+#     runOptions: 'inline'
+#     inline: |
+#       sudo systemctl restart tomcat
+
