@@ -1,4 +1,6 @@
-App Service: Two types of hosting environments.
+App Service: Fully managed platform for hosting webapps. 
+--
+Two types of hosting environments.
 --
 * App service plan: Basic level.
 * App service environment: More features than app service plan.
