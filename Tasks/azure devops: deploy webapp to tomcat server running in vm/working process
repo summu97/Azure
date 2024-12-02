@@ -1,0 +1,46 @@
+Step-01
+* Create a VM with tomcat installed in it.
+Step-02
+* Create a project in Azure DevOps and clone your code in Repos(https://github.com/SaravanaNani/jenkins-java-project.git)
+Step-03
+* Add service connection: Project settings-Pipeline-Service Connection--Create service connection--SSH-Next--Host name(public ip of server)--Private key(Upload it)--Username(add your VM user name)--Service connection name--Save
+Step-04
+* Create Pipeline--Create--Azure repos git--Select your repository where your code is present--Maven--use below code by making necessary changes--save and run
+------------------------------
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/target'
+    Contents: '**/*.war'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/war-files'
+
+# # # # Step 3: Publish the copied files as pipeline artifacts
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/war-files'
+    artifact: 'war-files'
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'Webapp-vm-connect'  # The name of your SSH service connection. CHANGE THIS with your service connect name.
+    sourceFolder: '$(Build.ArtifactStagingDirectory)/war-files'
+    contents: '*.war'
+    targetFolder: '/home/azureuser/apache-tomcat-9.0.97/webapps' # CHANGE THIS
+-------------------------------
