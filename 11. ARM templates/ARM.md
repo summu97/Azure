@@ -32,3 +32,7 @@ What happend when you create a project?
 --
 * An empty git repo with project name is created.
 
+NOTE:
+--
+* You cannot create "Resource Group" using "ARM" template.
+
