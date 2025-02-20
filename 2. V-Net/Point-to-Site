@@ -1,3 +1,4 @@
+Link: https://youtu.be/N-btL_8YVK8?si=Q3_HJB-HcYDAuHsE
 What is happening here?
 * In our system we have a azure VPN client--we initiate it and it connects with azure VNet and uses our system as an extention and we can directly connect to VM's via private IP.
 
