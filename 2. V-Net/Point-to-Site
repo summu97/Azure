@@ -37,6 +37,8 @@ Now Open the saved cert file location--Right click--Open in notepad(Keep it side
 # Extract client crtificate
 In your pc after generating certificates: Start menu--manage user certificates--give your pc password--console will open(go into it)-- Personal--Certificates(you can see the generated certificates)--On client certificate--Right click--All taks--Export--Next--Select: yes, export the private key--Next--Next--Give password--Next--Browse(Location to store the file)--Next--Finish.
 (When you share this client certificate to your clients and they open it(double tap on certificate)--after few steps it will ask for password)
+NOTE: only after giving password the client certificate will be installed.
+
 # Step-04: Download VPN client
 Virtual network gateways--Go to created gateway--Point-to-site configuration--Configure now--Address pool(172.16.0.0/24)--Tunnel type(IKEv2 and SSTP (SSL))--Authentication type(Azure certificate)--In Root certificates--Name(Give any name)--Public certificate data(Paste the cert content from notepad(only the main body not beginning and ending))--Save--Download VPN client.
 
