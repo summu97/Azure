@@ -1,0 +1,13 @@
+* To protect from accedential deletions.
+* Used along with RBAC.
+* Can be applied at Subscription level, Resource Group level, individual resource level.
+* Types of resource locks:
+  - CanNotDelete: Prvents deletion but allows modification.
+  - ReadOnly: Prevents both deletion and modification.
+* Locks can be applied through portal, CLI, Powershell.
+
+Applying locks:
+At Subscription level:
+Select Subscription--settings--resource locks--+Add--name--lock type--ok
+
+same for resource group level and individual resources.
