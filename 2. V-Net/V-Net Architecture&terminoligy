@@ -1,7 +1,15 @@
 VNet is a regional resource
---
+
 Azure Firewall: Network level security(Global Security).
 -- Applied to entire V-Net.
+
+Firewall manager:
+Azure Firewall Manager is like a central portal where you can see and manage all the firewalls in your Azure environment. 
+It gives you a single place to:
+View and manage all the firewall rules.
+Apply consistent security policies across multiple firewalls in different regions or subscriptions.
+Monitor the health and performance of your firewalls.
+
 --
 NSG(Network Security Group): Resource level security-Ports-Inbound/Outbound rules.
 --
