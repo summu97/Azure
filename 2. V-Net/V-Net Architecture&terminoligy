@@ -17,11 +17,29 @@ NSG types:
 --
 * Subnet level NSG: Applied to all instances in subnet.
 * Instance level NSG: Aplied to induvidual instances in subnet.
+
+Q. How NSG works?
+A. using inbound and outbound rules.
+
+Q. How many rules can be created in NSG?
+A. 100 - 4090
+
+Q. At what levels we can associate NSG?
+A. subnet level and NIC level.
+
+Q. What if a VM has NSG at both levels?
+A. Same rule must be passes at both levels.
+
+* You can attach single NSG to multiple NIC's.
   
 ASG(Application Security Group): Enhances security capabilities of NSG.
 --
 * Applies only to group of servers.
 * Using ASG we can group VM's and apply firewall rules only to that particular group.
+
+Application security group:
+Q. What is ASG used for?
+A. To group multiple VMs, even if they are in different subnets, and apply Network Security Group (NSG) rules to the entire group.
 
 Network interface:
 --
