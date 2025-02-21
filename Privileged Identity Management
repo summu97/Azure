@@ -1,0 +1,12 @@
+Privileged Identity Management is a service in Azure Active Directory that enables you to manage, control & monitor access to important resources in your organization.
+
+Key Features:
+Temporary Access: PIM gives users temporary, just-in-time access to important roles (e.g., admin roles) when needed, instead of having permanent access.
+
+Approval Workflow: When someone requests access to a privileged role, it can require approval from another admin before they get access.
+
+Extra Security: PIM can require users to verify their identity with multi-factor authentication (MFA) before they get elevated access.
+
+Audit and Alerts: It keeps track of who has access to privileged roles and sends alerts if there are any suspicious activities.
+
+Access Reviews: Periodically, you can review who has privileged access to make sure it's still necessary.
