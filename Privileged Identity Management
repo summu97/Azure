@@ -10,3 +10,11 @@ Extra Security: PIM can require users to verify their identity with multi-factor
 Audit and Alerts: It keeps track of who has access to privileged roles and sends alerts if there are any suspicious activities.
 
 Access Reviews: Periodically, you can review who has privileged access to make sure it's still necessary.
+
+To assign partiular role to a user:
+PIM--manage--azure AD roles--assign eligibility--search for any role--click on it--+ add assignment--select a member--next--assignment type--assign
+
+Assignment types:
+Eligible: user can activate his role and then deactivate.
+    You can also set permanently eligible or eligible for particular time frame (start & end dates).
+Active: permanently assign them the role.
