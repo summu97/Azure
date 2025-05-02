@@ -1,4 +1,4 @@
-
+Lets say you have deployed web-servers in different locations like one in india and other in dubai then to route traffic in between these servers a traffic manager can be used.
 Traffic Manager: DNS based traffic load-balancer. Just like Route53 in AWS.
 --
 * It is created as a policy not as load-balancer.
