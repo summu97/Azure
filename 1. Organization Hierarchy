@@ -1,13 +1,6 @@
-Management Groups:  Groups multiple subscriptions for easier management.
-   └── Subscriptions:  For billing purpose-Has no of resource groups. Ex: devSub, testSub.
-        └── Resource Groups:  Group of resources. Ex: V-Net, VM's, Storage etc... as one group.
-              └── Resources:  Actual resources. Ex: VM's etc...
-
-
-When you create Azure account, you get:
-Tenant-ID
-  └──  Subscriptions
-         └──  Resource Groups
-                └──  Resources
-Resource Manager: Who creates the resource.
--- User request for some resource---request goes to Resource Manager----Resource Manager provides resource.
+Tenant
+   └──
+      Management Groups:  Groups multiple subscriptions for easier management.
+         └── Subscriptions:  For billing purpose-Has no of resource groups. Ex: devSub, testSub.
+              └── Resource Groups:  Group of resources. Ex: V-Net, VM's, Storage etc... as one group.
+                  └── Resources:  Actual resources. Ex: VM's etc...
