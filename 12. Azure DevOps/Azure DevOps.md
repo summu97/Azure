@@ -3,12 +3,12 @@
 
 Main parameters to know: Boards, Repos, Pipelines, Artifacts, Test Plans.
 --
-* Boards: For planning purpose.
+* Boards: For planning purpose(Work tracking (Agile, Scrum)).
 	* All task related stuff is kept here, what to do?, how to do?, how much to do?...... are tracked here.
 	* We can also integrate ticketing tools like Jira and create tickets, tasks(Plan) for what to build, to fix bugs etc...
 	* Backlogs: Sprint(15 days default)-time dedicated for doing task. You can define start and end time for task. You might have scrum calls.
 
-* Repos: To store our code. Similar to Source Code Management. We can integrate our GitHub with this.
+* Repos: To store our code. Similar to Source Code Management. We can integrate our GitHub with this(Git repositories).
 	* Ex: GitLab, GitHub, ButBucket.
 
 * Pipelines: For Testing & Packaging code(CI/CD purpose). CI=Builds, CD=Releases.
@@ -22,13 +22,13 @@ Main parameters to know: Boards, Repos, Pipelines, Artifacts, Test Plans.
 	* Manual test plan - free.
 	* Automates test plan - costly.
 
-* Artifacts: Libraries/Dependencies for production/code.
+* Artifacts: Libraries/Dependencies for production/code(Package management).
 	* To store the build artifacts produced by build pipelines. EX: jar, war, nuget, tar files. 
 	* You can store and share different packages from public & private sources.
    	* Supports maven, nuget, npm packages.	
 	* NOTE: If you build an normal artifact(jar, war etrc....) then push to repository & if you build an image then push to Container registry.
 
-* Test plans: Browser based test management tool for testing your application.
+* Test plans: Browser based test management tool for testing your application(Manual and exploratory testing).
   	* Test plan types: Manual test plan, automated test plan.
   	* This will be executed as part of CI/CD process & test reports can be viewed.
 
