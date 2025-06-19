@@ -179,7 +179,7 @@ NOTE: Release pipeline can be created only using UI- no yaml file for this.
 Example Pipelines: azure-pipelines.yml
 --
 * Basic Pipeline
-----
+```bash
 # Specify you branch
 trigger:
 - <branch>
@@ -225,10 +225,10 @@ stages:
         echo "Running tests for $(appName)..."
         # Simulate test command here
       displayName: Run Tests
-----
+```
 
 * Multi job pipeline
-----
+```bash
 # azure-pipelines.yml
 
 trigger:
@@ -284,52 +284,4 @@ stages:
         # Simulate integration test command
         echo "Integration tests completed successfully!"
       displayName: Run Integration Tests
-----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
