@@ -58,6 +58,13 @@ What happend when you create a project?
 --
 * An empty git repo with project name is created.
 -----------------------------------------------------------------------------------------------------------
+# Types of agents in Azure DevOps
+
+| Type             | Managed By | Customization | Cost                      |
+| ---------------- | ---------- | ------------- | ------------------------- |
+| Microsoft-hosted | Microsoft  | ❌ Limited     | Pay-per-use (free limits) |
+| Self-hosted      | You        | ✅ Full        | You manage the VM         |
+-----------------------------------------------------------------------------------------------------------
 # ✅ Types of Pipelines in Azure DevOps
 
 Azure DevOps provides two main types of pipelines to automate build, test, and deployment workflows. Here's a quick overview:
