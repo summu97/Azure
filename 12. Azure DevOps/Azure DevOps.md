@@ -58,6 +58,50 @@ What happend when you create a project?
 --
 * An empty git repo with project name is created.
 -----------------------------------------------------------------------------------------------------------
+# ✅ Types of Pipelines in Azure DevOps
+
+Azure DevOps provides two main types of pipelines to automate build, test, and deployment workflows. Here's a quick overview:
+
+---
+
+## 1. Classic Pipelines (UI-Based)
+
+- Created using the Azure DevOps **web interface**.
+- Easy to use with **drag-and-drop** steps.
+- Ideal for **beginners** or simple CI/CD projects.
+
+---
+
+## 2. YAML Pipelines (Code-Based)
+
+- Defined in `.yaml` files and stored in the **code repository**.
+- Fully **version-controlled** and **flexible**.
+- Best for teams following **DevOps practices** and needing automation at scale.
+
+---
+
+## 📝 Additional Pipeline Types
+
+| Type               | Description                            |
+|--------------------|----------------------------------------|
+| **Build Pipeline** | Builds the code and runs tests         |
+| **Release Pipeline** | Deploys the application               |
+| **Multi-Stage Pipeline** | Combines build, test, and deploy in one YAML pipeline |
+
+---
+
+## 📌 When to Use What?
+
+| Use Case                     | Recommended Pipeline Type |
+|------------------------------|---------------------------|
+| Simple or quick setup        | Classic (UI-Based)        |
+| Complex automation workflow  | YAML (Code-Based)         |
+| Teams practicing GitOps/DevOps | YAML (Code-Based)       |
+
+---
+
+Feel free to customize or extend this guide based on your team's use case!
+-----------------------------------------------------------------------------------------------------------
 PIPELINE EXPLANATION: 
 --
 Building blocks of pipeline:
