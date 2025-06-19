@@ -21,13 +21,16 @@ Main parameters to know: Boards, Repos, Pipelines, Artifacts, Test Plans.
 * Test Plans: For testing purpose.
 	* Manual test plan - free.
 	* Automates test plan - costly.
- '''
-# bash
-Test Plan(A group of related test cases organized to validate a specific part of your application)
- └── Test Suites(Logical groupings within a test plan. Can be static, requirement-based, or query-based)
-      └── Test Cases(Step-by-step instructions for manually testing a feature. You define expected outcomes for validation)
-           └── Test Steps (with expected results)
-'''
+## 🧪 Azure DevOps Test Plan Structure
+
+```bash
+# Azure DevOps Test Plan Structure
+
+Test Plan           # A group of related test cases organized to validate a specific part of your application
+└── Test Suites     # Logical groupings within a test plan (Static, Requirement-based, or Query-based)
+    └── Test Cases  # Step-by-step instructions for manually testing a feature with defined expected outcomes
+        └── Test Steps  # Individual steps with expected results
+```
 
 * Artifacts: Libraries/Dependencies for production/code(Package management).
 	* To store the build artifacts produced by build pipelines. EX: jar, war, nuget, tar files. 
