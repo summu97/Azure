@@ -1,0 +1,19 @@
+What is Azure API Management?
+APIM is a secure middleman that protects, controls, and tracks access to your backend APIs.
+
+🔹 Receives the request from the client or app
+🔹 Checks for rules like:
+    - Is the user allowed?
+    - Is the request safe?
+    - Has the user exceeded their limit?
+🔹 Passes the request to the actual backend API
+🔹 Returns the response back to the client
+
+
+
+Q. Let’s say you have a web app that calls a backend API.
+A. Instead of exposing the API directly, you send traffic through APIM, which:
+  ✅ Checks if the request is allowed
+  ✅ Logs it for analytics
+  ✅ Sends it to your backend
+  ✅ Returns the response to the user
